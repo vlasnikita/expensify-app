@@ -16,6 +16,7 @@ const addExpense = (expense) => {
 }
 
 const removeExpense = ({ id } = {}) => {
+    console.log('REMOVING:', id)
     return {
         type: REMOVE_EXPENSE,
         payload: { id }
