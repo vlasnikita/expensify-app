@@ -11,9 +11,6 @@ import './styles/styles.scss'
 
 const store = configureStore()
 
-store.dispatch(addExpense({name: 'Foo', description: 'some description', amount: 12, createdAt: 91000}))
-store.dispatch(addExpense({name: 'Bar', description: 'another description', amount: 37, createdAt: 5500}))
-
 const jsx = (
     <Provider store={store}>
         <AppRouter/>

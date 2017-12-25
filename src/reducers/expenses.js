@@ -13,9 +13,9 @@ export default (state = [], { type, payload }) => {
 
         case EDIT_EXPENSE:
             return state.map((expense) => {
-                expense.id === payload.id ?
-                    { ...expense, ...payload.updates } :
-                    expense
+                if(expense.id === payload.id)
+                    return { ...expense, ...payload.updates }
+                else return expense
             })
 
         default:
