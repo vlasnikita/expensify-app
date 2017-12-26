@@ -32,7 +32,9 @@ class ExpenseListFilters extends Component{
                     <option value="date">Date</option>
                     <option value="amount">Amount</option>
                 </select>
-                <DateRangePicker 
+                <DateRangePicker
+                    startDateId=''
+                    endDateId='' 
                     startDate={filters.startDate}
                     endDate={filters.endDate}
                     onDatesChange={this.handleDatesChange}

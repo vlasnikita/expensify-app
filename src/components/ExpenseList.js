@@ -11,7 +11,6 @@ const ExpenseList = ({ expenses }) => (
 )
 
 const getBody =(expenses)=> {
-    console.log('Expenses:', expenses)
     return (
         <ul>
         {
@@ -26,7 +25,6 @@ const getBody =(expenses)=> {
 }
 
 const mapStateToProps = (state)=> {
-    console.log('state', state)
     return {
         expenses: getVisibleExpenses(state.expenses, state.filters)
     }
